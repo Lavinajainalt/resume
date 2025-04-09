@@ -1,0 +1,246 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .resume-builder1 {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  .form-section1 {
+    flex: 1;
+    min-width: 280px;
+    max-width: 500px;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    position: sticky;
+    top: 1rem;
+  }
+  
+  .preview-section1 {
+    flex: 1;
+    min-width: 280px;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form styling */
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #333;
+    font-size: clamp(0.875rem, 1vw, 1rem);
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #e8dbdb;
+    border-radius: 4px;
+    font-size: clamp(0.875rem, 1vw, 1rem);
+  }
+  
+  .form-group textarea {
+    min-height: 100px;
+    max-height: 300px;
+    resize: vertical;
+  }
+  
+  /* Resume preview styling */
+  .resume1 {
+    padding: clamp(1rem, 2vw, 2rem);
+    background-color: rgb(227, 218, 218);
+  }
+  
+  .resume1 header {
+    margin-bottom: clamp(1rem, 2vw, 2rem);
+    text-align: center;
+    text-decoration: underline;
+    
+  }
+  
+  .resume1 h1 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    word-wrap: break-word;
+    text-decoration: underline;
+  }
+  
+  .resume1 h2 {
+    color: #34495e;
+    margin: 0.5rem 0;
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
+    word-wrap: break-word;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    margin-top: 1rem;
+    padding: 0 0.5rem;
+    border-top: 1px solid #ddd;
+  
+  }
+  
+  .contact-info p {
+    margin: 0;
+    color: #666;
+    font-size: clamp(0.75rem, 1vw, 1rem);
+    word-break: break-word;
+    text-decoration: dashed;
+    
+  }
+  
+  .summary1,
+  .experience1,
+  .education1,
+  .skills1,
+  .languages1,
+  .certifications1 {
+    margin-bottom: clamp(1rem, 2vw, 2rem);
+  }
+  
+  .content1 {
+    color: #555;
+    line-height: 1.6;
+    font-size: clamp(0.875rem, 1vw, 1rem);
+    word-wrap: break-word;
+  }
+  
+  .two-column1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  /* Button styling */
+  .buttonl {
+    width: 100%;
+    padding: clamp(0.75rem, 1vw, 1rem);
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: clamp(0.875rem, 1vw, 1rem);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buttonl:hover {
+    background-color: #34495e;
+  }
+  
+  /* Responsive breakpoints */
+  @media (max-width: 1400px) {
+    .resume-builder1 {
+      gap: 0.75rem;
+      padding: 0.75rem;
+    }
+  
+    .form-section1,
+    .preview-section1 {
+      padding: 1rem;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .resume-builder1 {
+      flex-direction: column;
+    }
+  
+    .form-section1 {
+      max-width: 100%;
+      position: static;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .resume-builder1 {
+      gap: 0.5rem;
+      padding: 0.5rem;
+    }
+  
+    .form-section1,
+    .preview-section1 {
+      padding: 0.75rem;
+    }
+  
+    .contact-info {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.25rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .resume-builder1 {
+      padding: 0.25rem;
+    }
+  
+    .form-section1,
+    .preview-section1 {
+      padding: 0.5rem;
+    }
+  
+    .form-group {
+      margin-bottom: 0.75rem;
+    }
+  }
+  
+  /* Print styles */
+  @media print {
+    .form-section1 {
+      display: none;
+    }
+  
+    .preview-section1 {
+      box-shadow: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .resume1 {
+      padding: 0;
+    }
+  
+    @page {
+      margin: 0.5cm;
+    }
+  }
+  
+  /* Accessibility improvements */
+  @media (prefers-reduced-motion: reduce) {
+    .buttonl {
+      transition: none;
+    }
+  }
+  
+  /* High contrast mode support */
+  @media (forced-colors: active) {
+    .buttonl {
+      border: 1px solid currentColor;
+    }
+  }
+  

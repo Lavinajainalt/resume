@@ -1,0 +1,138 @@
+/* Global variables for consistent styling */
+:root {
+  --template-gap: 20px;
+  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --transition-speed: 0.3s;
+  --primary-button: #007bff;
+  --button-hover: #0056b3;
+}
+
+/* Common grid layout for all template sections */
+.templatesimple,
+.moderntemp,
+.profession {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+  gap: var(--template-gap);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+/* Common styles for template containers */
+.tempsimp1, .tempsimp2, .tempsimp3, .tempsimp4,
+.tempmod1, .tempmod2, .tempmod3, .tempmod4,
+.protemp1, .protemp2, .protemp3, .protemp4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  transition: transform var(--transition-speed) ease;
+}
+
+/* Hover effect for template containers */
+.tempsimp1:hover, .tempsimp2:hover, .tempsimp3:hover, .tempsimp4:hover,
+.tempmod1:hover, .tempmod2:hover, .tempmod3:hover, .tempmod4:hover,
+.protemp1:hover, .protemp2:hover, .protemp3:hover, .protemp4:hover {
+  transform: translateY(-5px);
+}
+
+
+.templ {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+}
+
+.templ img {
+  width: 100%;
+  height: 300px;
+  object-fit: fill;
+  display: block;
+  transition: transform var(--transition-speed) ease;
+}
+
+.templ img:hover {
+  transform: scale(1.02);
+}
+
+
+.Usebtn {
+  padding: 10px 20px;
+  background-color: var(--primary-button);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color var(--transition-speed) ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.Usebtn:hover {
+  background-color: var(--button-hover);
+}
+
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .templatesimple,
+  .moderntemp,
+  .profession {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .templatesimple,
+  .moderntemp,
+  .profession {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .templ img {
+    height: 250px;
+  }
+
+  .Usebtn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.templ img {
+  animation: fadeIn 0.5s ease-in;
+}
+
+
+.Usebtn:focus {
+  outline: 2px solid #0056b3;
+  outline-offset: 2px;
+}
+
+
+@media print {
+  .Usebtn {
+    display: none;
+  }
+  
+  .templ {
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+}

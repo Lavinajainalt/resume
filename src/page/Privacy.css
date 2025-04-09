@@ -1,0 +1,208 @@
+.privacy-container {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 3rem;
+    background: #fafafa;
+    border: 1px solid #eaeaea;
+    border-radius: 16px;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+  
+  .privacy-container header {
+    margin-bottom: 4rem;
+    text-align: center;
+    position: relative;
+  }
+  
+  .privacy-container header::before {
+    content: '🔒';
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 1rem;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  .privacy-container h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+  }
+  
+  .privacy-container header p {
+    color: #64748b;
+    font-size: 1.1rem;
+  }
+  
+  .privacy-container section {
+    margin-bottom: 2.5rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .privacy-container section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, #2563eb, #7c3aed);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .privacy-container section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.15);
+  }
+  
+  .privacy-container section:hover::before {
+    opacity: 1;
+  }
+  
+  .privacy-container h2 {
+    font-size: 1.8rem;
+    color: #1e293b;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .privacy-container p {
+    color: #475569;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Glass effect for sections */
+  .privacy-container section {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .privacy-container {
+      margin: 1.5rem;
+      padding: 1.5rem;
+    }
+  
+    .privacy-container h1 {
+      font-size: 2.2rem;
+    }
+  
+    .privacy-container h2 {
+      font-size: 1.5rem;
+    }
+  
+    .privacy-container section {
+      padding: 1.5rem;
+    }
+  }
+  
+  /* Dark Mode */
+  @media (prefers-color-scheme: dark) {
+    .privacy-container {
+      background: #111827;
+      border-color: #1f2937;
+    }
+  
+    .privacy-container section {
+      background: #1f2937;
+      border: 1px solid #374151;
+    }
+  
+    .privacy-container h2 {
+      color: #f3f4f6;
+    }
+  
+    .privacy-container p {
+      color: #9ca3af;
+    }
+  
+    .privacy-container header p {
+      color: #9ca3af;
+    }
+  }
+  
+  /* Smooth Transitions */
+  .privacy-container * {
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Custom Selection */
+  .privacy-container ::selection {
+    background: rgba(37, 99, 235, 0.2);
+    color: currentColor;
+  }
+  
+  /* Links */
+  .privacy-container a {
+    color: #2563eb;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+  
+  .privacy-container a:hover {
+    border-bottom-color: #2563eb;
+  }
+  
+  /* Focus States */
+  .privacy-container *:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
+    border-radius: 4px;
+  }
+  
+  /* Loading Animation */
+  @keyframes shimmer {
+    0% {
+      background-position: -1000px 0;
+    }
+    100% {
+      background-position: 1000px 0;
+    }
+  }
+  
+  .privacy-container.loading section {
+    animation: shimmer 2s infinite linear;
+    background: linear-gradient(to right, #f6f7f8 8%, #edeef1 18%, #f6f7f8 33%);
+    background-size: 1000px 100%;
+  }
+  
+  /* Print Styles */
+  @media print {
+    .privacy-container {
+      margin: 0;
+      padding: 20px;
+      box-shadow: none;
+      border: none;
+    }
+  
+    .privacy-container header::before {
+      display: none;
+    }
+  
+    .privacy-container section {
+      box-shadow: none;
+      break-inside: avoid;
+      border: 1px solid #eaeaea;
+    }
+  }
+  

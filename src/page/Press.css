@@ -1,0 +1,214 @@
+.press-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+  }
+  
+  .press-container h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #2c5282, #4299e1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin-bottom: 3rem;
+    letter-spacing: -0.5px;
+  }
+  
+  .press-section {
+    margin-bottom: 2.5rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .press-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .press-section h2 {
+    font-size: 2rem;
+    color: #1a202c;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 0.75rem;
+  }
+  
+  .press-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #2c5282, #4299e1);
+    border-radius: 2px;
+  }
+  
+  .press-section ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .press-section li {
+    padding: 1.25rem;
+    border-radius: 12px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .press-section li:hover {
+    background: #f7fafc;
+    border-color: rgba(66, 153, 225, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .press-section a {
+    color: #2d3748;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.5rem;
+    transition: color 0.2s ease;
+  }
+  
+  .press-section a:hover {
+    color: #4299e1;
+  }
+  
+  .press-section p {
+    color: #718096;
+    font-size: 0.9rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .press-section p::before {
+    content: '📅';
+    margin-right: 0.5rem;
+  }
+  
+  /* Animation for list items */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .press-section li {
+    animation: fadeIn 0.5s ease forwards;
+    animation-delay: calc(var(--animation-order, 0) * 0.1s);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .press-container {
+      padding: 2rem 1rem;
+    }
+  
+    .press-container h1 {
+      font-size: 2.5rem;
+    }
+  
+    .press-section {
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+  
+    .press-section h2 {
+      font-size: 1.75rem;
+    }
+  
+    .press-section li {
+      padding: 1rem;
+    }
+  }
+  
+  /* Dark Mode Support */
+  @media (prefers-color-scheme: dark) {
+    .press-container {
+      background: linear-gradient(to bottom, #1a202c, #2d3748);
+    }
+  
+    .press-section {
+      background: rgba(26, 32, 44, 0.8);
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+  
+    .press-section h2 {
+      color: #e2e8f0;
+    }
+  
+    .press-section li {
+      background: rgba(45, 55, 72, 0.9);
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+  
+    .press-section li:hover {
+      background: rgba(45, 55, 72, 1);
+      border-color: rgba(66, 153, 225, 0.4);
+    }
+  
+    .press-section a {
+      color: #e2e8f0;
+    }
+  
+    .press-section a:hover {
+      color: #4299e1;
+    }
+  
+    .press-section p {
+      color: #a0aec0;
+    }
+  }
+  
+  /* Print styles */
+  @media print {
+    .press-container {
+      background: none;
+      padding: 0;
+    }
+  
+    .press-section {
+      break-inside: avoid;
+      background: none;
+      border: none;
+      box-shadow: none;
+      margin-bottom: 1.5rem;
+    }
+  
+    .press-section:hover {
+      transform: none;
+      box-shadow: none;
+    }
+  
+    .press-section h1 {
+      color: #000;
+      background: none;
+    }
+  
+    .press-section a {
+      color: #000;
+    }
+  
+    .press-section p {
+      color: #666;
+    }
+  }
+  

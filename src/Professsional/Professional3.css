@@ -1,0 +1,562 @@
+/* Main container */
+.resume-builder10 {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  /* Form section styles */
+  .form-section10 {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+  }
+  
+  .form10 {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .form10 h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5rem;
+  }
+  
+  .form-group10 {
+    margin-bottom: 15px;
+  }
+  
+  .form-group10 label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #444;
+    font-size: 0.9rem;
+  }
+  
+  .form-group10 input,
+  .form-group10 textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group10 input:focus,
+  .form-group10 textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0,123,255,0.1);
+  }
+  
+  .form-group10 textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  .button-group10 {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .button2 {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .primary10 {
+    background: #007bff;
+    color: white;
+  }
+  
+  .primary10:hover {
+    background: #0056b3;
+  }
+  
+  .primary10:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .secondary10 {
+    background: #6c757d;
+    color: white;
+  }
+  
+  .secondary10:hover {
+    background: #5a6268;
+  }
+  
+  /* Preview section styles */
+  .preview-section10 {
+    flex: 1;
+    min-width: 210mm;
+    background: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .resume10 {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 15mm;
+    margin: 0 auto;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    color: #000000;
+    font-size: 10pt;
+    line-height: 1.4;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Header styles */
+  .header10 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+  }
+  
+  .header10 h1 {
+    font-size: 18pt;
+    margin-bottom: 4px;
+    color: #000000;
+    font-weight: bold;
+  }
+  
+  .header10 h2 {
+    font-size: 14pt;
+    margin-bottom: 10px;
+    color: #333333;
+    font-weight: normal;
+  }
+  
+  /* Contact information */
+  .contact-info10 {
+    margin-bottom: 15px;
+    font-size: 9pt;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .contact-info10 p {
+    margin: 0;
+    color: #000000;
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  .contact-info10 p::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+  }
+  
+  .contact-info10 p:nth-child(1)::before {
+    content: "✉";
+  }
+  
+  .contact-info10 p:nth-child(2)::before {
+    content: "☏";
+  }
+  
+  .contact-info10 p:nth-child(3)::before {
+    content: "⌂";
+  }
+  
+  .contact-info10 p:nth-child(4)::before {
+    content: "in";
+  }
+  
+  
+  
+  .content10 p {
+    margin-bottom: 4px;
+    color: #000000;
+    font-size: 10pt;
+    line-height: 1.4;
+  }
+  
+  /* Two column layout */
+  .two-columns10 {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .right-column10 {
+    flex: 1;
+  }
+  
+  /* Section specific styles */
+  .professional-summary10 .content10 p {
+    font-size: 10pt;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  
+  .work-experience10 .content10 p {
+    margin-bottom: 8px;
+  }
+  
+  .education10 .content10 p {
+    margin-bottom: 6px;
+  }
+  
+  .skills10 .content10 p {
+    margin-bottom: 4px;
+    font-size: 9.5pt;
+  }
+  
+  .languages10 .content10 p {
+    font-size: 9.5pt;
+  }
+  
+  .certifications10 .content10 p {
+    font-size: 9.5pt;
+    margin-bottom: 4px;
+  }
+  
+  /* Print styles */
+  @media print {
+    .resume10 {
+      box-shadow: none;
+      padding: 15mm;
+      width: 210mm;
+      height: 297mm;
+      margin: 0;
+    }
+  
+    .preview-section10 {
+      padding: 0;
+      margin: 0;
+      box-shadow: none;
+    }
+  
+    .form-section10 {
+      display: none;
+    }
+  }
+  
+  /* PDF generation specific styles */
+  #resume-preview10 {
+    background-color: white !important;
+    color: black !important;
+  }
+  
+  #resume-preview10 * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  /* Preview section styles */
+.preview-section10 {
+    flex: 1;
+    min-width: 210mm;
+    background: #ffffff;
+    padding: 30px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden; /* Contains everything inside */
+}
+
+.resume10 {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 25mm;
+    margin: 0 auto;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    color: #333333;
+    font-size: 10pt;
+    line-height: 1.5;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+/* Header styles enhancement */
+.header10 {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 15px;
+}
+
+.header10 h1 {
+    font-size: 24pt;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.header10 h2 {
+    font-size: 14pt;
+    margin-bottom: 12px;
+    color: #34495e;
+}
+
+/* Section headings enhancement */
+  .section10 h2 {
+    font-size: 13pt;
+    margin-bottom: 12px;
+    color: #2c3e50;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid #bdc3c7;
+    padding-bottom: 5px;
+}
+
+/* Content enhancement */
+.content10 p {
+    margin-bottom: 8px;
+    color: #2c3e50;
+    font-size: 10pt;
+    line-height: 1.3;
+}
+
+/* Print styles refinement */
+@media print {
+    .preview-section10 {
+        padding: 0;
+        margin: 0;
+        box-shadow: none;
+        min-width: auto;
+    }
+
+    .resume10 {
+        width: 210mm;
+        height: 297mm;
+        padding: 20mm;
+        margin: 0;
+        border: none;
+        box-shadow: none;
+    }
+}
+
+/* Responsive enhancement */
+@media screen and (max-width: 1200px) {
+    .preview-section10 {
+        min-width: auto;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .resume10 {
+        width: 100%;
+        padding: 15mm;
+    }
+}
+
+  /* Preview section styles */
+.preview-section10 {
+    flex: 1;
+    min-width: 210mm;
+    background: #ffffff;
+    padding: 30px;
+    margin: 20px auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+}
+
+.resume10 {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 25mm;
+    margin: 0 auto;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    color: #333333;
+    font-size: 10pt;
+    line-height: 1.5;
+    /* Enhanced border and box styling */
+    border: 2px solid #2c3e50;
+    box-shadow: 
+        0 0 0 8px #ffffff,  /* Inner white space */
+        0 0 0 9px #e0e0e0,  /* Thin grey border */
+        0 2px 24px rgba(0,0,0,0.1);  /* Outer shadow */
+    position: relative;
+}
+
+/* Section styles enhancement */
+.section10 {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+.section10 h2 {
+    font-size: 13pt;
+    margin: -15px -15px 15px -15px;
+    padding: 10px 15px;
+    color: #2c3e50;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid #2c3e50;
+    background-color: #f8f9fa;
+}
+
+/* Header section specific styling */
+.header10 {
+    margin: -25mm -25mm 20px -25mm;  /* Negative margin to extend full width */
+ 
+    border-bottom: 3px solid #2c3e50;
+    background-color: #f8f9fa;
+}
+
+/* Print styles refinement */
+@media print {
+    .preview-section10 {
+        padding: 0;
+        margin: 0;
+        box-shadow: none;
+        border: none;
+        min-width: auto;
+    }
+
+    .resume10 {
+        
+  
+        margin: 0;
+        border: none;
+        box-shadow: none;
+    }
+
+    section {
+        border: none;
+    }
+
+    .header10 {
+        margin: 0 0 20px 0;
+     
+    }
+}
+
+/* Responsive enhancement */
+@media screen and (max-width: 1200px) {
+    .preview-section10 {
+        min-width: auto;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .resume10 {
+        width: 100%;
+       
+    }
+
+    .header10 {
+        margin: -15mm -15mm 20px -15mm;
+
+    }
+}
+
+  /* Responsive styles */
+  @media screen and (max-width: 1200px) {
+    .resume-builder10 {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .form-section10 {
+      max-width: 100%;
+      width: 100%;
+    }
+  
+    .preview-section10 {
+      margin: 20px 0;
+      width: 100%;
+      overflow-x: auto;
+    }
+  }
+  
+  /* Additional spacing utilities */
+  .mb-10 {
+    margin-bottom: 10px;
+  }
+  
+  .mb-20 {
+    margin-bottom: 20px;
+  }
+  
+  /* Form validation styles */
+  .form-group10 input:invalid,
+  .form-group10 textarea:invalid {
+    border-color: #dc3545;
+  }
+  
+  .form-group10 input:invalid:focus,
+  .form-group10 textarea:invalid:focus {
+    box-shadow: 0 0 0 2px rgba(220,53,69,0.25);
+  }
+  
+  /* Loading state styles */
+  .loading {
+    opacity: 0.7;
+    pointer-events: none;
+  }
+  
+  /* Error state styles */
+  .error-message {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  
+  /* Success state styles */
+  .success-message {
+    color: #28a745;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  
+  /* Hover effects */
+  .form-group10 input:hover,
+  .form-group10 textarea:hover {
+    border-color: #80bdff;
+  }
+  
+  .button2:hover {
+    transform: translateY(-1px);
+  }
+  
+  /* Custom scrollbar */
+  .form-group10 textarea::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .form-group10 textarea::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  .form-group10 textarea::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  
+  .form-group10 textarea::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  

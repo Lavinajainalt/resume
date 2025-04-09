@@ -1,0 +1,228 @@
+/* General Layout */
+.resume-builder5 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Form Section */
+  .form-section5 {
+    width: 40%;
+  }
+  
+  .form5 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group5 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group5 label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444;
+  }
+  
+  .form-group5 input,
+  .form-group5 textarea {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #f8f8f8;
+  }
+  
+  .form-group5 textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  .button5 {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .button5:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Preview Section */
+  .preview-section5 {
+    width: 55%;
+
+    border-radius: 12px;
+    background: #f4f4f4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    max-height: 90vh;
+  }
+  
+  /* Resume Design */
+  .resume5 {
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    font-size: 14px;
+  }
+  
+ 
+ 
+  /* Contact Info */
+  .contact-info5 p {
+    margin: 2px 0;
+    font-size: 13px;
+    color: #666;
+  }
+  
+  /* Section Headings */
+  .section-heading5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+    color: #444;
+  }
+  
+ 
+
+  
+  /* Grid Layout for Right Column */
+  .right-column5 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+ /* Preview Section */
+.preview-section5 {
+    width: 55%;
+    max-width: 850px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Smooth shadow for depth */
+
+}
+.resume5 {
+   
+    border: 1px solid #f4cccc;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+   
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    color: #4d4d4d;
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+/* Header Section */
+.header5 {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #f783ac; /* Accent line in harmony with gradient */
+}
+
+.header5 h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #d84315; /* Vibrant header text */
+    margin: 0;
+}
+
+.header5 h2 {
+    font-size: 18px;
+    font-style: italic;
+    color: #e57373; /* Subtle secondary text */
+    margin: 5px 0 0;
+}
+
+/* Profile Image */
+.profile-image5 {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px auto;
+    border: 4px solid #f48fb1; /* Soft pink border */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow for emphasis */
+}
+
+/* Contact Info */
+.contact-info5 p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+    text-align: center;
+}
+
+/* Section Headings */
+.section-heading5 {
+    font-size: 15px;
+    margin: 20px 0 10px;
+    color: #d84315;
+    border-bottom: 2px solid #fbc2eb; /* Complementary border color */
+  
+}
+
+/* Section Content */
+.content5 p {
+    margin: 10px 0;
+    color: #4d4d4d;
+    line-height: 1.3;
+}
+
+.content5 p::before {
+ 
+    color: #d84315; /* Accent bullet points */
+    font-weight: bold;
+}
+
+/* Two-Column Layout */
+.two-column5 {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skills5,
+.right-column5 {
+    flex: 1;
+    background: #ffe5e2; /* Light complementary background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .preview-section5 {
+        margin: 10px auto;
+        padding: 20px;
+    }
+
+    .resume5 {
+        padding: 15px;
+    }
+
+    .two-column5 {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .profile-image5 {
+        width: 90px;
+        height: 90px;
+    }
+}

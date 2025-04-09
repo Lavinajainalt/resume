@@ -1,0 +1,291 @@
+/* Modern3.css */
+
+
+  .resume-builder6 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 30px;
+  }
+  
+  .form-section6 {
+    flex: 1;
+    max-width: 40%;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+  }
+  
+  .form-section6 h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: #222;
+    border-bottom: 2px solid #007acc;
+    padding-bottom: 5px;
+  }
+  
+  .form6 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group6 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group6 label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  .form-group6 input,
+  .form-group6 textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fcfcfc;
+    outline: none;
+    transition: box-shadow 0.3s, border-color 0.3s;
+  }
+  
+  .form-group6 input:focus,
+  .form-group6 textarea:focus {
+    border-color: #007acc;
+    box-shadow: 0 0 5px rgba(0, 122, 204, 0.5);
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 90px;
+  }
+  
+  .button6 {
+    padding: 12px 18px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007acc;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button6:hover {
+    background-color: #005fa3;
+  }
+  
+  .button6:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .preview-section6 {
+    flex: 2;
+    max-width: 700px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    overflow-y: auto;
+  }
+  
+  .resume6 {
+    width: 100%;
+    padding: 30px;
+    background-color: #fefefe;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  .header6 {
+    text-align: left;
+    border-bottom: 2px solid #007acc;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .header6 h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: #222;
+  }
+  
+  .header6 .title6 {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    color: #666;
+  }
+  
+  
+  .contact-info6 {
+    display: flex;
+    
+    flex-direction: column;
+    font-size: 0.9rem;
+    color: #444;
+  }
+  
+  .contact-info6 p {
+    margin: 5px 0;
+  }
+  
+  .section6 {
+    margin-bottom: 20px;
+  }
+  
+  .section6 h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #007acc;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+  }
+  
+  .content6 {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .content6 p {
+    margin-bottom: 10px;
+  }
+  
+  .two-column6 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .skills6,
+  .languages6,
+  .certifications6 {
+    flex: 1;
+  }
+  
+  .right-column6 {
+    flex: 1;
+  }
+  
+  /* Modern3.css - Updated Preview Background */
+
+.preview-section6 {
+    flex: 2;
+    max-width: 700px;
+    background: #e3f2fd; /* Light blue background for the preview container */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Slightly darker shadow for depth */
+    padding: 25px;
+    overflow-y: auto;
+  }
+  
+  .resume6 {
+    width: 100%;
+    padding: 30px;
+    background-color: #ffffff; /* Clean white background for the resume */
+    border: 1px solid #90caf9; /* Soft blue border for the resume */
+    border-radius: 10px;
+  }
+  
+  /* Header Section */
+  .header6 {
+    text-align: left;
+    border-bottom: 2px solid #42a5f5; /* Rich blue for header underline */
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .header6 h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: #1565c0; /* Deep blue for main heading */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header6 .title6 {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    color: #5e92f3; /* Soft blue for subtitle */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .profile-image6 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px auto; /* Center horizontally */
+    object-fit: cover;
+    border: 3px solid #42a5f5; /* Matching the header underline color */
+    display: block; /* Ensure proper centering as a block element */
+  }
+  
+  /* Contact Info */
+  .contact-info6 {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    color: #1e88e5; /* Slightly brighter blue for contact details */
+  }
+  
+  .contact-info6 p {
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Section Headers */
+  .section6 h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #1565c0; /* Deep blue for section titles */
+    border-bottom: 1px solid #90caf9;
+    padding-bottom: 5px;
+  }
+  
+  /* Content Styling */
+  .content6 {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333; /* Dark gray for readability */
+  }
+  
+  .content6 p {
+    margin-bottom: 10px;
+  }
+  
+  /* Two-Column Layout */
+  .two-column6 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .skills6,
+  .languages6,
+  .certifications6 {
+    flex: 1;
+  }
+  
+  .right-column6 {
+    flex: 1;
+  }
+  
+  /* Additional Section Styling */
+  .section6 {
+    background: #e1f5fe; /* Light blue tint for sections */
+    border-radius: 6px;
+    padding: 10px;
+  }
+  
+  .section6 h2 {
+    color: #1565c0; /* Deep blue for section headers */
+  }
+  

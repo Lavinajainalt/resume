@@ -1,0 +1,164 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 4rem;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.mainlog {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-left: 1rem;
+}
+
+.imglog {
+  display: flex;
+  align-items: center;
+}
+
+.imglog img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* If you want to add hover effects */
+.mainlog:hover {
+  cursor: pointer;
+}
+
+.imglog img:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+
+.mainlog h3 {
+  color: #2563eb;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.navhead {
+  display: flex;
+  gap: 3rem;
+}
+
+.divmain a {
+  text-decoration: none;
+  color: #4b5563;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.divmain a:hover {
+  color: #2563eb;
+}
+
+.combine {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.login a {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 500;
+  padding: 8px 20px;
+  border: 1.5px solid #2563eb;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.login a:hover {
+  background-color: #2563eb;
+  color: white;
+}
+
+.template a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 9px 20px;
+  background-color: #2563eb;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.template a:hover {
+  background-color: #1d4ed8;
+}
+
+/* Active link styles */
+.divmain a.active,
+.login a.active,
+.template a.active {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.template a.active {
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .navhead {
+    gap: 1.5rem;
+  }
+
+  .combine {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .login, .template {
+    width: 100%;
+    text-align: center;
+  }
+
+  .login a, .template a {
+    display: block;
+    padding: 10px 0;
+  }
+}
+
+/* For larger screens */
+@media (min-width: 1200px) {
+  .main {
+    padding: 0.5rem 6rem;
+  }
+}

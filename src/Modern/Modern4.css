@@ -1,0 +1,326 @@
+/* Modern4.css */
+
+/* General styling for the resume builder */
+.resume-builder7 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Form styling */
+  .form-section7 {
+    width: 40%;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form7 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group7 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group7 label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group7 input,
+  .form-group7 textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .button7 {
+    background: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .button7:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  /* Resume preview styling */
+  .preview-section7 {
+    width: 55%;
+  }
+  
+  .resume7 {
+    background: linear-gradient(135deg, #ffffff, #f0f4f8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+  }
+  
+  .header7 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .header7 h1 {
+    font-size: 1.8em;
+    color: #2c3e50;
+  }
+  
+  .header7 h2 {
+    font-size: 1.2em;
+    color: #34495e;
+  }
+  
+  .contact-info7 p {
+    margin: 5px 0;
+    color: #34495e;
+  }
+  
+  .summary7, .experience7, .education7, .skills7, .languages7, .certifications7 {
+    margin-bottom: 20px;
+  }
+  
+  .summary7 h2, 
+  .experience7 h2, 
+  .education7 h2, 
+  .skills7 h2, 
+  .languages7 h2, 
+  .certifications7 h2 {
+    font-size: 1.3em;
+    color: #2980b9;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 5px;
+  }
+  
+  .content7 p {
+    margin: 5px 0;
+  }
+  
+  .two-column7 {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .right-column7 {
+    flex: 1;
+  }
+  
+  .skills7, .languages7, .certifications7 {
+    flex: 1;
+  }
+  
+  /* Add a unique background for the resume */
+  .resume7 {
+    background: linear-gradient(to right, #f7fafc, #dce2f0);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Adjust font styles for a polished look */
+  .resume7 h1 {
+    font-family: 'Georgia', serif;
+    color: #2e4053;
+  }
+  
+  .resume7 h2 {
+    font-family: 'Arial', sans-serif;
+    color: #5d6d7e;
+  }
+  
+  .content7 p {
+    line-height: 1.6;
+    font-size: 0.9em;
+    color: #5d6d7e;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .resume-builder7 {
+      flex-direction: column;
+    }
+  
+    .form-section7, .preview-section7 {
+      width: 100%;
+    }
+  }
+
+
+  /* Experience Section: Separate Column Style */
+.experience7 {
+    padding: 20px;
+    background: #f7fbfc;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .experience7 h2 {
+    font-size: 1.8em;
+    color: #2b506e;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #3c87aa;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  .experience7 .content7 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  
+  .experience7 .content7 .experience-item {
+    flex: 1 1 calc(45% - 10px); /* Each experience takes about 45% of the width */
+    min-width: 200px;
+    max-width: 300px;
+    text-align: left;
+    background: #ffffff;
+    border: 2px solid #3c87aa;
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-size: 0.9em;
+    font-weight: normal;
+    color: #2b506e;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .experience7 .content7 .experience-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background: #3c87aa;
+    color: #ffffff;
+  }
+  
+  .experience7 .content7 .spacer {
+    flex-basis: 100%; /* Ensures new row for close alignment when needed */
+    height: 0;
+  }
+/* Education Section: Separate Column Style */
+.education7 {
+    padding: 20px;
+    background: #f7fbfc;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .education7 h2 {
+    font-size: 1.8em;
+    color: #2b506e;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #3c87aa;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  .education7 .content7 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  
+  .education7 .content7 .education-item {
+    flex: 1 1 calc(45% - 10px); /* Each education takes about 45% of the width */
+    min-width: 200px;
+    max-width: 300px;
+    text-align: left;
+    background: #ffffff;
+    border: 2px solid #3c87aa;
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-size: 0.9em;
+    font-weight: normal;
+    color: #2b506e;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .education7 .content7 .education-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background: #3c87aa;
+    color: #ffffff;
+  }
+  
+  .education7 .content7 .spacer {
+    flex-basis: 100%; /* Ensures new row for close alignment when needed */
+    height: 0;
+  }
+    
+  /* Skills Section: Separate Column Style */
+.skills7 {
+    padding: 20px;
+    background: #f7fbfc;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skills7 h2 {
+    font-size: 1.8em;
+    color: #2b506e;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #3c87aa;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  .skills7 .content7 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  
+  .skills7 .content7 .skill-item {
+    flex: 1 1 calc(30% - 10px); /* Each skill takes about 30% of the width */
+    min-width: 150px;
+    max-width: 200px;
+    text-align: center;
+    background: #ffffff;
+    border: 2px solid #3c87aa;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #2b506e;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skills7 .content7 .skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background: #3c87aa;
+    color: #ffffff;
+  }
+  
+  .skills7 .content7 .spacer {
+    flex-basis: 100%; /* Ensures new row for close alignment when needed */
+    height: 0;
+  }
+  

@@ -1,0 +1,362 @@
+.resume-builder2 {
+    display: flex;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f5f5f5;
+  }
+  
+  .form-section2 {
+    flex: 1;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .form-group2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .form-group2 label {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .form-group2 input,
+  .form-group2 textarea {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group2 textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  .form-group2 input:focus,
+  .form-group2 textarea:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .button2 {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button2:hover {
+    background-color: #0056b3;
+  }
+  
+  .preview-section2 {
+    flex: 1;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10;
+  }
+  
+  .resume2 {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .header2 h1 {
+    margin: 0;
+    color: #d78f01;
+    font-size: 2rem;
+  }
+  
+  .title2 {
+    color: #d78f01;
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+  }
+  
+  .contact-info2 {
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+  
+    margin-top: 1rem;
+    color:#d78f01;
+  }
+  
+  .contact-info2 p {
+    margin: 0;
+  }
+  
+  .summary2,
+  .experience2,
+  .education2,
+  .skills2,
+  .languages2,
+  .certifications2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .summary2 h2,
+  .experience2 h2,
+  .education2 h2,
+  .skills2 h2,
+  .languages2 h2,
+  .certifications2 h2 {
+    color: #333;
+    border-bottom: 2px solid #342a12;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+  
+  .content2 {
+    color: #444;
+    line-height: 1.4;
+  }
+  
+  .content2 p {
+    margin: 0.5rem 0;
+  }
+  
+  .two-column2 {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .skills2 {
+    flex: 1;
+  }
+  
+  .right-column2 {
+    flex: 1;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .resume-builder2 {
+      flex-direction: column;
+    }
+  
+    .form-section2,
+    .preview-section2 {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contact-info2 {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  
+    .two-column2 {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .form-group2 input,
+    .form-group2 textarea {
+      font-size: 16px; /* Prevents zoom on mobile devices */
+    }
+  }
+  
+  /* Print Styles */
+  @media print {
+    .form-section2 {
+      display: none;
+    }
+  
+    .preview-section2 {
+      box-shadow: none;
+      padding: 0;
+    }
+  
+    .resume2 {
+      max-width: 100%;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .resume2 section {
+    animation: fadeIn 0.3s ease-out forwards;
+  }
+  
+  /* Focus States for Accessibility */
+  .form-group2 input:focus,
+  .form-group2 textarea:focus,
+  .button2:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+  }
+  
+  /* Error States */
+  .form-group2 input:invalid,
+  .form-group2 textarea:invalid {
+    border-color: #dc3545;
+  }
+  
+  /* Placeholder Styles */
+  .form-group2 input::placeholder,
+  .form-group2 textarea::placeholder {
+    color: #999;
+  }
+  
+  /* Selection Styles */
+  .resume2 ::selection {
+    background-color: #007bff;
+    color: white;
+  }
+  /* Preview Section Specific Styles */
+.preview-section2 {
+  flex: 1;
+  background-color: #ffffff;
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  color: #1e88f2; /* Dark blue-grey text color */
+}
+
+.preview-section2 .resume2 {
+  text-align: left;
+  padding: 10px;
+}
+
+.preview-section2 ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.preview-section2 ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.preview-section2 li {
+  margin-bottom: 0.5rem;
+  color: #34495e; /* Slightly lighter blue-grey for list items */
+}
+
+.preview-section2 .content2 {
+  color: #2c3e50;
+  text-align: left;
+}
+
+.preview-section2 .header2 {
+  text-align: left;
+}
+
+.preview-section2 .contact-info2 {
+  justify-content: left;
+  font-size: 12px;
+}
+
+.preview-section2 h2 {
+  color: #d78f01; /* Dark blue for headings */
+  text-align: left;
+}
+
+.preview-section2 .title2 {
+  color:#d78f01; /* Medium blue for titles */
+}
+
+/* Additional color enhancements for different sections */
+.preview-section2 .summary2 {
+  color: #2c3e50;
+}
+
+.preview-section2 .experience2 .content2 {
+  color: #34495e;
+}
+
+.preview-section2 .education2 .content2 {
+  color: #34495e;
+}
+
+.preview-section2 .skills2 .content2 {
+  color: #34495e;
+}
+
+.preview-section2 .languages2 .content2 {
+  color: #34495e;
+}
+
+.preview-section2 .certifications2 .content2 {
+  color: #34495e;
+}
+
+/* Enhance list items in specific sections */
+.preview-section2 .experience2 ul,
+.preview-section2 .skills2 ul {
+  list-style-type: disc;
+  margin-left: 1rem;
+}
+
+.preview-section2 .experience2 li,
+.preview-section2 .skills2 li {
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+/* Add subtle hover effect on list items */
+.preview-section2 li:hover {
+  color: #1a237e;
+  transition: color 0.2s ease;
+}
+@media print {
+    * {
+      background: transparent !important;
+      color: #000 !important;
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+    
+    .form-section2 {
+      display: none;
+    }
+    
+    .preview-section2 {
+      margin: 10;
+      padding: 10;
+    }
+  }
+  

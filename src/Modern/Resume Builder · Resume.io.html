@@ -1,0 +1,118 @@
+const ResumeBuilder = () => {
+  const [title, setTitle] = useState('Untitled');
+  const [isRenameActive, setIsRenameActive] = useState(false);
+
+  const handleTitleChange = useCallback((e) => {
+    setTitle(e.target.value);
+  }, []);
+
+  const toggleRename = useCallback(() => {
+    setIsRenameActive(prev => !prev);
+  }, []);
+
+  return (
+    <div className="builder-container">
+      <head>
+        <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, viewport-fit=cover" />
+        <meta name="apple-mobile-web-app-title" content="Resume.io" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+        <meta name="robots" content="noindex" />
+        <title>Resume Builder</title>
+      </head>
+
+      <div id="builder-application">
+        <nav className="navigation">
+          <MenuButton />
+          <DashboardButton />
+          <SettingsButton />
+        </nav>
+
+        <main className="editor-panel">
+          <div className="editor-header">
+            <div className="title-container">
+              <div className="title-wrapper">
+                <input
+                  placeholder="Untitled"
+                  className="title-input"
+                  value={title}
+                  onChange={handleTitleChange}
+                  aria-label="Resume title"
+                />
+                <div className="title-display">{title}</div>
+              </div>
+
+              <div className="rename-section">
+                <div className="rename-tooltip">
+                  <div className="tooltip-content">
+                    <div>Rename</div>
+                    <svg 
+                      width={24} 
+                      height={8} 
+                      viewBox="0 0 24 8" 
+                      fill="none" 
+                      aria-hidden="true"
+                    >
+                      <path 
+                        d="M24 0V0.00171492C22.8155 0.00840678 22.1125 0.0412078 21.5083 0.201989C20.8354 0.381051 20.1934 0.676253 19.607 1.07629C18.9455 1.52754 18.3834 2.15794 17.2593 3.41875L15.186 5.74412C14.0745 6.99082 13.5187 7.61417 12.8735 7.84668C12.3063 8.05111 11.6932 8.05111 11.1259 7.84668C10.4808 7.61417 9.92499 6.99082 8.81344 5.74412L6.74016 3.41875C5.61604 2.15794 5.05398 1.52754 4.39247 1.07629C3.80606 0.676255 3.16409 0.381053 2.49116 0.201991C1.90672 0.0464747 1.19182 0.0106943 1.9813e-10 0.00246231L0 2.2739e-10L24 0Z" 
+                        fill="currentColor" 
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="language-selector">
+            <div className="selected-language">
+              <div className="language-icon" />
+              English
+            </div>
+            {isRenameActive && (
+              <div className="language-dropdown">
+                <div className="dropdown-header">Resume Language</div>
+                <div className="language-options">
+                  <LanguageOption 
+                    icon="english" 
+                    label="English" 
+                    isSelected={true} 
+                  />
+                  <LanguageOption 
+                    icon="english-uk" 
+                    label="English (UK)" 
+                    isSelected={false} 
+                  />
+                </div>
+              </div>
+            )}
+          </div>
+        </main>
+      </div>
+    </div>
+  );
+};
+
+// Reusable components
+const MenuButton = React.memo(() => (
+  <button className="menu-button" aria-label="Menu">
+    <svg width={24} height={24} viewBox="0 0 24 24" aria-hidden="true">
+      {/* Menu icon SVG path */}
+    </svg>
+  </button>
+));
+
+const DashboardButton = React.memo(() => (
+  <button className="dashboard-button">
+    <span>Dashboard</span>
+  </button>
+));
+
+const LanguageOption = React.memo(({ icon, label, isSelected }) => (
+  <div className={`language-option ${isSelected ? 'selected' : ''}`}>
+    <div className={`language-icon ${icon}`} />
+    {label}
+  </div>
+));
+

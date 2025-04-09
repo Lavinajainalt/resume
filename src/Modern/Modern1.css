@@ -1,0 +1,171 @@
+/* General Layout */
+.resume-builder4 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .form-section4 {
+    width: 40%;
+  }
+  
+  .preview-section4 {
+    width: 55%;
+    border: none;
+    border-radius: 12px;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    
+    max-height: 90vh;
+   
+  }
+  
+  /* Form Styling */
+  .form4 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group4 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group4 label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group4 input,
+  .form-group4 textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .form-group4 textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  .button4 {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .button4:disabled {
+    background-color: #a9a9a9;
+    cursor: not-allowed;
+  }
+  
+  /* Resume Styling */
+  .resume4 {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #fff; /* White text */
+    font-size: 14px; /* Smaller font size */
+    line-height: 1.3; /* Reduced line height */
+    padding: 15px;
+    background-color: #000; /* Black background */
+    border-radius: 10px;
+  
+  }
+  
+  /* Header Section */
+  .header4 {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+  }
+  
+  .header4 h1 {
+    margin: 0;
+    font-size: 24px; /* Slightly smaller */
+    font-weight: bold !important;
+    color: #ffff; 
+  }
+  
+  .header4 .title4 {
+    margin-top: 5px;
+    font-size: 16px; /* Smaller size */
+    font-style: italic;
+    color: #ccc; /* Light gray */
+  }
+  
+  /* Contact Information */
+  .contact-info4 p {
+    margin: 3px 0;
+    font-size: 13px; /* Reduced size */
+    color: #ddd; /* Light gray */
+  }
+  
+  /* Section Headings */
+  .summary4 h2,
+  .experience4 h2,
+  .education4 h2,
+  .skills4 h2,
+  .languages4 h2,
+  .certifications4 h2 {
+    font-size: 16px; /* Smaller heading size */
+    color: #fff;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 8px;
+  }
+  
+  /* Section Content */
+  .content4 p {
+    margin: 6px 0;
+    text-align: justify;
+    color: #ccc;
+  }
+  
+  .content4 p::before {
+    content: '• ';
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  /* Two-column Layout */
+  .two-column4 {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .skills4 {
+    width: 50%;
+  }
+  
+  /* Right Column Grid Layout */
+  .right-column4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  
+  .right-column4 section {
+    margin-bottom: 15px;
+  }
+  
+  /* Certifications and Languages Grid */
+  .languages4,
+  .certifications4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1px;
+  }
+  
+  .languages4 .content4 p,
+  .certifications4 .content4 p {
+    margin: 0;
+    text-align: left;
+    color: #fff;
+  }
+  

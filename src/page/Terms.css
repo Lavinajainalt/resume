@@ -1,0 +1,139 @@
+.terms-modern {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+  }
+  
+  .terms-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .terms-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .terms-subtitle {
+    font-size: 1rem;
+    opacity: 0.9;
+  }
+  
+  .terms-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .nav-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: transparent;
+    color: #4b5563;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .nav-button.active {
+    background-color: #6366f1;
+    color: white;
+  }
+  
+  .terms-content {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .terms-section {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .terms-section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .terms-section.active {
+    border-left: 4px solid #6366f1;
+  }
+  
+  .terms-section h2 {
+    color: #1f2937;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+  
+  .section-content {
+    color: #4b5563;
+    line-height: 1.6;
+  }
+  
+  .terms-footer {
+    margin-top: 3rem;
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .accept-button {
+    margin-top: 1rem;
+    padding: 0.75rem 2rem;
+    background-color: #6366f1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accept-button:hover {
+    background-color: #4f46e5;
+  }
+  
+  @media (max-width: 768px) {
+    .terms-modern {
+      padding: 1rem;
+    }
+  
+    .terms-header {
+      padding: 1.5rem;
+    }
+  
+    .terms-header h1 {
+      font-size: 2rem;
+    }
+  
+    .terms-navigation {
+      flex-direction: column;
+    }
+  
+    .nav-button {
+      width: 100%;
+      text-align: left;
+    }
+  }
+  

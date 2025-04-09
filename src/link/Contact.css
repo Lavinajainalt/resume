@@ -1,0 +1,360 @@
+.contact-class {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(
+      45deg,
+      #7FA4BC,
+      #A1B7C8,
+      #C5CAD2,
+      #D6D5CD,
+      #E6DFD1,
+      #F8EFDE
+  );
+  height: 45vh;
+  background-size: 200% 200%;
+  animation: gradient 4s ease infinite;
+}
+
+@keyframes gradient {
+  0%, 100% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+}
+
+  .contact {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .contact-class p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .contact-textbox {
+    text-align: center;
+    margin: 0px 0;
+  }
+  
+  .contact-textbox h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  .textbox{
+    background-color: rgb(255, 247, 237);
+    padding: 20px;
+  }
+  .contact-iteams, .contact-items1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .contact-list, .contact-list1, .contact-list2, .contact-list3 {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-list:hover, .contact-list1:hover, 
+  .contact-list2:hover, .contact-list3:hover {
+    transform: translateY(-5px);
+  }
+  
+  .contact-list h4, .contact-list1 h4, 
+  .contact-list2 h4, .contact-list3 h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .contact-list p, .contact-list1 p, 
+  .contact-list2 p, .contact-list3 p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .but1 {
+    width: 100%;
+    padding: 25px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .but1:hover {
+    background-color: #0056b3;
+  }
+  
+  .but1 a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact {
+      font-size: 2rem;
+    }
+  
+    .contact-textbox h2 {
+      font-size: 1.75rem;
+    }
+  
+    .contact-iteams, .contact-items1 {
+      grid-template-columns: 1fr;
+      padding: 15px;
+    }
+  
+    .contact-class {
+      padding: 30px 15px;
+    }
+  }
+  
+  /* Accessibility */
+  .but1:focus {
+    outline: 3px solid #0056b3;
+    outline-offset: 2px;
+  }
+  
+  /* Animation for hover effects */
+  @keyframes buttonPulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  button:active {
+    animation: buttonPulse 0.3s ease;
+  }
+  .contact-call {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+   background-color: rgb(255, 247, 237);
+    border-radius: 8px;
+    margin: 2rem auto;
+  }
+  
+  .conimg img {
+    width: 100%;
+    height: 75vh;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .contact-call-text {
+    flex: 1;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-call-text h3 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-call-text p {
+    color: #666;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .contact-call-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem;
+    min-width: 120px;
+  }
+  
+  .contact-call-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 968px) {
+    .contact-call {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+    }
+  
+    .contact-call img {
+      width: 150px;
+    }
+  
+    .contact-call-text {
+      width: 100%;
+      padding: 1rem;
+    }
+  
+    .contact-call-button {
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+  }
+  .about-footer {
+    background: #f8f9fa;
+    color: #333;
+    padding: 60px 0 20px 0;
+  }
+  
+  .end-part {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .end-list nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+  
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-section h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .footer-section h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 30px;
+    height: 2px;
+    background: #007bff;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-section li {
+    margin-bottom: 12px;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 15px;
+  }
+  
+  .footer-section li:hover {
+    color: #007bff;
+    transform: translateX(5px);
+  }
+  
+  .endat {
+    border-top: 1px solid #dee2e6;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .end {
+    margin-right: 30px;
+  }
+  
+  .end:last-child {
+    margin-right: 0;
+  }
+  
+  .end p {
+    color: #6c757d;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .end p:hover {
+    color: #007bff;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+    .about-footer {
+      padding: 40px 0 20px 0;
+    }
+  
+    .end-list nav {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+  
+    .endat {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 15px;
+    }
+  
+    .end {
+      margin-right: 0;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .about-footer {
+      padding: 30px 0 20px 0;
+    }
+  
+    .end-list nav {
+      grid-template-columns: 1fr;
+      gap: 25px;
+    }
+  
+    .footer-section h4 {
+      font-size: 16px;
+    }
+  
+    .footer-section li {
+      font-size: 14px;
+    }
+  
+    .end p {
+      font-size: 13px;
+    }
+  }
+  
